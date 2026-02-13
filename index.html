@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hotel Aurora — Experiencia Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuentes: serif editorial + sans moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV / ENCABEZADO -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="#top" aria-label="Ir al inicio">AURORA</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+        Menú
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a significa href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a class="btn btn-primary" href="#contacto">Reservar</a>
+    </nav>
+
+    <!-- HERO (título llamativo + imagen) -->
+    <section class="hero" aria-label="Sección principal">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <p class="kicker">Hotel Boutique</p>
+        <h1 class="hero-title">Bienvenido a una estancia con alma</h1>
+        <p class="hero-subtitle">
+          Un refugio cálido, elegante y tranquilo — pensado para descansar, explorar y disfrutar.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#habitaciones">Explorar habitaciones</a>
+          <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- CUERPO PRINCIPAL -->
+  <main>
+    <!-- Texto informativo -->
+    <section class="section container" aria-label="Presentación del hotel">
+      <div class="section-header">
+        <span class="divider" aria-hidden="true"></span>
+        <p class="kicker">Nuestra propuesta</p>
+        <h2 class="section-title">Un hotel diseñado para vivir la ciudad con calma</h2>
+      </div>
+
+      <div class="grid two">
+        <article class="card card-soft">
+          <p class="body">
+            En Hotel Aurora cuidamos los detalles: espacios luminosos, materiales cálidos y una estética editorial y minimalista. 
+            La idea es ofrecer una experiencia cómoda y premium, sin sobrecargar el diseño. 
+            Todo está organizado por secciones claras, con tarjetas, imágenes y llamados a la acción.
+          </p>
+
+          <p class="body">
+            Además, se prioriza la armonía visual mediante el uso de tipografías elegantes, 
+            paletas de color suaves y amplios espacios en blanco que facilitan la lectura y la navegación. 
+            La estructura de la página busca guiar al usuario de forma intuitiva, destacando la información 
+            más relevante como habitaciones, servicios y contacto, sin generar saturación visual. 
+            De esta manera, la interfaz no solo cumple una función informativa, sino que también transmite 
+            la identidad del hotel y la sensación de tranquilidad que se desea proyectar al visitante.
+          </p>
+        </article>
+
+        <!-- Imagen adicional (además del hero) -->
+        <figure class="media-card" aria-label="Imagen representativa del hotel">
+          <img src="img/hotel.png" alt="Vista cálida y elegante de un hotel o habitación" />
+          <figcaption class="caption">Ambientes cálidos, luz suave y estilo editorial.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- LISTA (viñetas o numerada) -->
+    <section class="section section-alt" id="servicios" aria-label="Servicios del hotel">
+      <div class="container">
+        <div class="section-header">
+          <span class="divider" aria-hidden="true"></span>
+          <p class="kicker">Amenidades</p>
+          <h2 class="section-title">Servicios pensados para tu comodidad</h2>
+        </div>
+
+        <div class="grid two">
+          <article class="card">
+            <h3 class="card-title">Lo que incluye tu estancia</h3>
+            <ul class="list">
+              <li>Desayuno ligero y café disponible cada mañana</li>
+              <li>Wi-Fi estable para estudio o trabajo</li>
+              <li>Recepción con atención personalizada</li>
+              <li>Recomendaciones de experiencias locales</li>
+              <li>Espacios tranquilos para descansar</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contacto">Consultar disponibilidad</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Promociones</h3>
+            <p class="body">
+              Paquetes por temporada con beneficios como late checkout o descuentos por noches consecutivas.
+            </p>
+            <div class="promo-row">
+              <div class="mini-tile">
+                <p class="caption">Paquete Relax</p>
+                <p class="mini-title">2 noches + detalle</p>
+              </div>
+              <div class="mini-tile">
+                <p class="caption">Paquete City</p>
+                <p class="mini-title">3 noches + guía</p>
+              </div>
+              <div class="mini-tile">
+                <p class="caption">Paquete Fun</p>
+                <p class="mini-title">4 noches + acceso a discotecas</p>
+              </div>
+              <div class="mini-tile">
+                <p class="caption">Paquete Premiun</p>
+                <p class="mini-title">5 noches + guía + acceso a discotecas + actividades en la playa</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABITACIONES (cards) -->
+    <section class="section container" id="habitaciones" aria-label="Habitaciones">
+      <div class="section-header">
+        <span class="divider" aria-hidden="true"></span>
+        <p class="kicker">Habitaciones</p>
+        <h2 class="section-title">Confort luminoso y elegante</h2>
+      </div>
+
+      <div class="grid four">
+        <article class="image-card">
+          <div class="image-card-media" style="background-image:url('img/suite.png');"></div>
+          <div class="image-card-content">
+            <h3 class="image-card-title">Suite Aurora</h3>
+            <p class="caption">Ideal para descanso premium.</p>
+          </div>
+        </article>
+
+        <article class="image-card">
+          <div class="image-card-media" style="background-image:url('img/doble.png');"></div>
+          <div class="image-card-content">
+            <h3 class="image-card-title">Doble Superior</h3>
+            <p class="caption">Cómoda y cálida para dos.</p>
+          </div>
+        </article>
+
+        <article class="image-card">
+          <div class="image-card-media" style="background-image:url('img/familiar.png');"></div>
+          <div class="image-card-content">
+            <h3 class="image-card-title">Familiar</h3>
+            <p class="caption">Espacio y tranquilidad.</p>
+          </div>
+        </article>
+
+        <article class="image-card">
+          <div class="image-card-media" style="background-image:url('img/sencilla.png');"></div>
+          <div class="image-card-content">
+            <h3 class="image-card-title">Clásica</h3>
+            <p class="caption">Minimalista y funcional.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section-accent" id="contacto" aria-label="Contacto y reservas">
+      <div class="container accent-layout">
+        <div class="accent-media" aria-hidden="true"></div>
+
+        <article class="card card-soft accent-card">
+          <div class="section-header left">
+            <span class="divider" aria-hidden="true"></span>
+            <p class="kicker">Reserva</p>
+            <h2 class="section-title">Contáctanos</h2>
+          </div>
+
+          <p class="body">
+            Completa este formulario para solicitar disponibilidad.
+          </p>
+
+          <form class="form" onsubmit="return false;">
+            <label>
+              <span class="caption">Nombre</span>
+              <input type="text" placeholder="Tu nombre" />
+            </label>
+
+            <label>
+              <span class="caption">Correo</span>
+              <input type="email" placeholder="tucorreo@email.com" />
+            </label>
+
+            <label>
+              <span class="caption">Mensaje</span>
+              <textarea rows="4" placeholder="Fechas y tipo de habitación..."></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="reset">Enviar</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer" aria-label="Pie de página">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-brand">AURORA</p>
+        <p class="footer-text">Hotel Boutique.</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Contacto</p>
+        <p class="footer-text">Tel: +57 300 000 0000</p>
+        <p class="footer-text">Email: contacto@hotelaurora.com</p>
+      </div>
+
+      <div>
+        <p class="footer-title">Enlaces</p>
+        <a class="footer-link" href="#top">Inicio</a>
+        <a class="footer-link" href="#habitaciones">Habitaciones</a>
+        <a class="footer-link" href="#servicios">Servicios</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-text">
+        © <span id="year"></span> Hotel Aurora. Todos los derechos reservados.
+      </p>
+      <a class="footer-link" href="https://www.booking.com/" target="_blank" rel="noreferrer">
+        Booking
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
