@@ -324,6 +324,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "DB"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -421,7 +424,7 @@
             "id": "1f75f9c7-b40c-4e62-9e54-866fd1e039e5",
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "DB",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -624,7 +627,12 @@
               "cell": "5b577782-48fd-4309-ba52-ccc4a7420ab8",
               "port": "1ee56efd-0e17-4e79-8901-46fd5df3c68f"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 360,
+                "y": 195
+              }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -657,6 +665,10 @@
               {
                 "x": 300,
                 "y": 180
+              },
+              {
+                "x": 300,
+                "y": 310
               }
             ]
           },
@@ -954,6 +966,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "ActiveMQ"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -1051,7 +1066,7 @@
             "id": "658b8472-92e8-4cb4-a958-2ff1f11ee39b",
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "ActiveMQ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1070,6 +1085,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Fabio",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
