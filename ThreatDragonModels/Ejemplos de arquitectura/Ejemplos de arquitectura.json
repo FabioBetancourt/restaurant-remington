@@ -83,6 +83,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Api Gateway"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -177,7 +180,7 @@
             "id": "5b577782-48fd-4309-ba52-ccc4a7420ab8",
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Api Gateway",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
